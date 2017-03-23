@@ -21,7 +21,7 @@ export default class HelloRN extends Component {
       </View>
       /*<View style={styles.container}>
         <Text style={styles.welcome}>
-          你好！我是測試唷唷
+          再一次測試
         </Text>
         <Text style={styles.instructions}>
           To get started, edit index.android.js
