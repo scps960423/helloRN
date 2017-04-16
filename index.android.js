@@ -9,15 +9,27 @@ import {
   AppRegistry,
   StyleSheet,
   Text,
-  View
+  View,
+  Image
 } from 'react-native';  
 
 export default class HelloRN extends Component {
   render() {
     return (
       <View style={{flex:1}}>
-      <View style={{backgroundColor:'cadetblue',flex:1}}/>
-      <View style={{backgroundColor:'pink',flex:1}}/>
+        <View style={styles.center}>
+          <Image style={[styles.center,{width:400}]} source={require('./cat.jpg') }>
+            <Text style={{color:'#fff',fontSize:30}}>
+            Hellooooooooo
+          </Text>
+          </Image>
+          
+        </View>
+        <View style={[styles.center,{backgroundColor:'darksalmon'}]}>
+          <Text style={{color:'#fff',fontSize:30}}>
+            Worldddddd
+          </Text>
+        </View>
       </View>
       /*<View style={styles.container}>
         <Text style={styles.welcome}>
@@ -54,6 +66,11 @@ const styles = StyleSheet.create({
     color: '#333333',
     marginBottom: 5,
   },
+    center: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  }
 });
 
 AppRegistry.registerComponent('HelloRN', () => HelloRN);
