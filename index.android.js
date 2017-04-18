@@ -10,7 +10,8 @@ import {
   StyleSheet,
   Text,
   View,
-  Image
+  Image,
+  TouchableOpacity
 } from 'react-native';  
 
 export default class HelloRN extends Component {
@@ -20,8 +21,11 @@ export default class HelloRN extends Component {
         <View style={styles.center}>
           <Image style={[styles.center,{width:400}]} source={require('./cat.jpg') }>
             <Text style={{color:'#fff',fontSize:30}}>
-            Hellooooooooo
-          </Text>
+              Hellooooooooo
+            </Text>
+            <TouchableOpacity style={styles.button} onPress={function() {console.log('被按了')}}>
+              <Text style={styles.buttonText}>TouchableOpacityButton</Text>
+            </TouchableOpacity>
           </Image>
           
         </View>
