@@ -29,7 +29,7 @@ export default class HelloRN extends Component {
           </Image>
           
         </View>
-        <View style={[styles.center,{backgroundColor:'darksalmon'}]}>
+        <View style={[styles.cㄔㄛenter,{backgroundColor:'darksalmon'}]}>
           <Text style={{color:'#fff',fontSize:30}}>
             Worldddddd
           </Text>
